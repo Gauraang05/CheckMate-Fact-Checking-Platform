@@ -1,0 +1,17 @@
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  artifacts_dir: artifacts
+data:
+  wiki_zip: wiki-pages.zip
+  passages_file: passages.jsonl
+models:
+  sentence_transformer: sentence-transformers/all-MiniLM-L6-v2
+retrieval:
+  top_k: 10
+  candidate_k: 100
+  rrf_k: 60
+  dense_batch_size: 64
+evaluation:
+  split: dev
+  max_queries: null

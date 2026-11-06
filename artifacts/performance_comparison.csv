@@ -1,0 +1,5 @@
+method,precision@10,recall,map,ndcg,queries
+TF-IDF,0.102,0.882,0.7976,0.823,100
+BM25,0.112,0.908,0.8338,0.8595,100
+Sentence Transformer,0.11,0.8893,0.8166,0.8426,100
+Hybrid RRF,0.112,0.9199,0.8386,0.8635,100

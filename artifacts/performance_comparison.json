@@ -1,0 +1,257 @@
+{
+  "summary": [
+    {
+      "method": "TF-IDF",
+      "precision@10": 0.102,
+      "recall": 0.882,
+      "map": 0.7976,
+      "ndcg": 0.823,
+      "queries": 100
+    },
+    {
+      "method": "BM25",
+      "precision@10": 0.112,
+      "recall": 0.908,
+      "map": 0.8338,
+      "ndcg": 0.8595,
+      "queries": 100
+    },
+    {
+      "method": "Sentence Transformer",
+      "precision@10": 0.11,
+      "recall": 0.8893,
+      "map": 0.8166,
+      "ndcg": 0.8426,
+      "queries": 100
+    },
+    {
+      "method": "Hybrid RRF",
+      "precision@10": 0.112,
+      "recall": 0.9199,
+      "map": 0.8386,
+      "ndcg": 0.8635,
+      "queries": 100
+    }
+  ],
+  "pr_curves": {
+    "cutoffs": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      15,
+      20,
+      30,
+      50
+    ],
+    "cutoff_pr": {
+      "TF-IDF": {
+        "1": {
+          "precision": 0.75,
+          "recall": 0.7175
+        },
+        "2": {
+          "precision": 0.445,
+          "recall": 0.8156
+        },
+        "3": {
+          "precision": 0.3033,
+          "recall": 0.8306
+        },
+        "5": {
+          "precision": 0.192,
+          "recall": 0.8639
+        },
+        "10": {
+          "precision": 0.102,
+          "recall": 0.882
+        },
+        "15": {
+          "precision": 0.0693,
+          "recall": 0.8885
+        },
+        "20": {
+          "precision": 0.0565,
+          "recall": 0.9249
+        },
+        "30": {
+          "precision": 0.041,
+          "recall": 0.9577
+        },
+        "50": {
+          "precision": 0.0256,
+          "recall": 0.9708
+        }
+      },
+      "BM25": {
+        "1": {
+          "precision": 0.82,
+          "recall": 0.7573
+        },
+        "2": {
+          "precision": 0.465,
+          "recall": 0.8373
+        },
+        "3": {
+          "precision": 0.3167,
+          "recall": 0.8456
+        },
+        "5": {
+          "precision": 0.202,
+          "recall": 0.872
+        },
+        "10": {
+          "precision": 0.112,
+          "recall": 0.908
+        },
+        "15": {
+          "precision": 0.0767,
+          "recall": 0.9163
+        },
+        "20": {
+          "precision": 0.0595,
+          "recall": 0.9344
+        },
+        "30": {
+          "precision": 0.0413,
+          "recall": 0.9542
+        },
+        "50": {
+          "precision": 0.0258,
+          "recall": 0.9725
+        }
+      },
+      "Sentence Transformer": {
+        "1": {
+          "precision": 0.81,
+          "recall": 0.7289
+        },
+        "2": {
+          "precision": 0.465,
+          "recall": 0.827
+        },
+        "3": {
+          "precision": 0.33,
+          "recall": 0.847
+        },
+        "5": {
+          "precision": 0.206,
+          "recall": 0.8651
+        },
+        "10": {
+          "precision": 0.11,
+          "recall": 0.8893
+        },
+        "15": {
+          "precision": 0.0807,
+          "recall": 0.9438
+        },
+        "20": {
+          "precision": 0.0615,
+          "recall": 0.9571
+        },
+        "30": {
+          "precision": 0.0423,
+          "recall": 0.9705
+        },
+        "50": {
+          "precision": 0.0264,
+          "recall": 0.9867
+        }
+      },
+      "Hybrid RRF": {
+        "1": {
+          "precision": 0.81,
+          "recall": 0.7608
+        },
+        "2": {
+          "precision": 0.45,
+          "recall": 0.8292
+        },
+        "3": {
+          "precision": 0.32,
+          "recall": 0.8539
+        },
+        "5": {
+          "precision": 0.208,
+          "recall": 0.8818
+        },
+        "10": {
+          "precision": 0.112,
+          "recall": 0.9199
+        },
+        "15": {
+          "precision": 0.08,
+          "recall": 0.9513
+        },
+        "20": {
+          "precision": 0.063,
+          "recall": 0.968
+        },
+        "30": {
+          "precision": 0.0427,
+          "recall": 0.9708
+        },
+        "50": {
+          "precision": 0.026,
+          "recall": 0.9742
+        }
+      }
+    },
+    "interpolated_11point": {
+      "TF-IDF": [
+        0.8336,
+        0.8336,
+        0.8224,
+        0.8124,
+        0.8029,
+        0.8027,
+        0.7802,
+        0.7782,
+        0.7782,
+        0.7767,
+        0.7767
+      ],
+      "BM25": [
+        0.876,
+        0.876,
+        0.8597,
+        0.8497,
+        0.8431,
+        0.8431,
+        0.8193,
+        0.8116,
+        0.8092,
+        0.8086,
+        0.8086
+      ],
+      "Sentence Transformer": [
+        0.8733,
+        0.8733,
+        0.87,
+        0.8585,
+        0.824,
+        0.8219,
+        0.7876,
+        0.7804,
+        0.7782,
+        0.7777,
+        0.7777
+      ],
+      "Hybrid RRF": [
+        0.8748,
+        0.8748,
+        0.867,
+        0.857,
+        0.8498,
+        0.8484,
+        0.8239,
+        0.8196,
+        0.8179,
+        0.8169,
+        0.8169
+      ]
+    }
+  }
+}

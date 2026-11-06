@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/
+REPORT.html
+REPORT.md
+
+# Raw and large processed datasets (large Wikipedia dumps)
+data/raw/
+data/processed/passages.jsonl
+data/processed/train.jsonl
+*.zip
+
+# Allow evaluation artifacts and figures to be committed
+!artifacts/performance_comparison.csv
+!artifacts/performance_comparison.json
+!artifacts/precision_recall.png
+!artifacts/dense_index.npz.meta.json
